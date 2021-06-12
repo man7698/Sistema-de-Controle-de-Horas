@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{96438DB5-AE24-4554-8F82-BAB7E33CFA67}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SGEU_TCC</RootNamespace>
+    <AssemblyName>SGEU_TCC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Adm\CadTurma.aspx" />
+    <Content Include="Adm\CadUsuario.aspx" />
+    <Content Include="Adm\Consulta_Atividades.aspx" />
+    <Content Include="Adm\ConUsuario.aspx" />
+    <Content Include="Adm\Default.aspx" />
+    <Content Include="Adm\GerarRelatorio.aspx" />
+    <Content Include="Adm\Inserir_Registro.aspx" />
+    <Content Include="imagens\04.png" />
+    <Content Include="imagens\100anos.png" />
+    <Content Include="imagens\application_edit.png" />
+    <Content Include="imagens\application_remove.png" />
+    <Content Include="imagens\branco.png" />
+    <Content Include="imagens\face.jpg" />
+    <Content Include="imagens\iconeditar.png" />
+    <Content Include="imagens\icone_exc.png" />
+    <Content Include="imagens\LOGIN.png" />
+    <Content Include="imagens\logo2.png" />
+    <Content Include="imagens\pontinho3.png" />
+    <Content Include="imagens\pontinhos2.png" />
+    <Content Include="imagens\pontinhos4.png" />
+    <Content Include="imagens\Publicação1.png" />
+    <Content Include="Adm\Relatorio.aspx" />
+    <Content Include="imagens\salvar.png" />
+    <Content Include="imagens\save.png" />
+    <Content Include="imagens\titulo default.png" />
+    <Content Include="imagens\twitter.jpg" />
+    <Content Include="imagens\unasp 2.jpg" />
+    <Content Include="imagens\unasp.jpg" />
+    <Content Include="imagens\unasp3.jpg" />
+    <Content Include="imagens\unasp4.jpg" />
+    <Content Include="imagens\youtube.jpg" />
+    <Content Include="javascript\Mascara.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Style\Style.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adm\CadTurma.aspx.cs">
+      <DependentUpon>CadTurma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adm\CadTurma.aspx.designer.cs">
+      <DependentUpon>CadTurma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\CadUsuario.aspx.cs">
+      <DependentUpon>CadUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adm\CadUsuario.aspx.designer.cs">
+      <DependentUpon>CadUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\Consulta_Atividades.aspx.cs">
+      <DependentUpon>Consulta_Atividades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adm\Consulta_Atividades.aspx.designer.cs">
+      <DependentUpon>Consulta_Atividades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\ConUsuario.aspx.cs">
+      <DependentUpon>ConUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adm\ConUsuario.aspx.designer.cs">
+      <DependentUpon>ConUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adm\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\GerarRelatorio.aspx.cs">
+      <DependentUpon>GerarRelatorio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adm\GerarRelatorio.aspx.designer.cs">
+      <DependentUpon>GerarRelatorio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\Inserir_Registro.aspx.cs">
+      <DependentUpon>Inserir_Registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adm\Inserir_Registro.aspx.designer.cs">
+      <DependentUpon>Inserir_Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Dados\GrupoUsuario.cs" />
+    <Compile Include="Dados\Menu.cs" />
+    <Compile Include="Dados\registro_horario.cs" />
+    <Compile Include="Dados\responsavel.cs" />
+    <Compile Include="Dados\turmas.cs" />
+    <Compile Include="Dados\usuarios.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Objetos\GrupoUsuario.cs" />
+    <Compile Include="Objetos\Menu.cs" />
+    <Compile Include="Objetos\registro_horario.cs" />
+    <Compile Include="Objetos\responsavel.cs" />
+    <Compile Include="Objetos\turmas.cs" />
+    <Compile Include="Objetos\usuarios.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Adm\Relatorio.aspx.cs">
+      <DependentUpon>Relatorio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adm\Relatorio.aspx.designer.cs">
+      <DependentUpon>Relatorio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="xsd\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Report1.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="imagens\33206e_c8abc182e3e94bcda9d6d4aa6861c3b2.png_srb_p_112_93_75_22_0.50_1.20_0.00_png_srb" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>38180</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

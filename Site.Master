@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SGEU_TCC.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head  runat="server">
+    <title></title>
+    <link href="Style/Style.css" rel="stylesheet" type="text/css" />
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body style="height: 286px; width: 958px;">
+    <form id="form1" runat="server">
+    <div>
+
+        <div class="bloco_geral">
+            
+        <div class="blocomenu">
+
+            <div class="quadrado_rosa_menu"></div>
+            <div class="quadrado_azul_menu"></div>
+            <div class="quadrado_roxo_menu"></div>
+            <div class="quadrado_amarelo_menu"></div>
+     
+            
+         <div class="menuzao">   <asp:Menu ID="Menu"  runat="server" Orientation="Horizontal" >
+
+                <LevelMenuItemStyles>
+                <asp:MenuItemStyle CssClass="level1"/>
+                <asp:MenuItemStyle CssClass="level2"/>
+                <asp:MenuItemStyle CssClass="level3" />
+                <asp:MenuItemStyle CssClass="level4" />
+                </LevelMenuItemStyles>
+  
+                <StaticHoverStyle CssClass="hoverstyle"/>
+            </asp:Menu>
+
+
+         </div>
+
+         
+
+            <div class="hiperlink">
+
+                <asp:HyperLink ID="HyperLink1"  runat="server" NavigateUrl="~/Login.aspx" BorderStyle="Double" ForeColor="White" Width="40px">SAIR</asp:HyperLink>
+
+           </div>
+
+            
+         
+            
+
+            
+        </div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+
+
+             </div>
+    </div>
+    </form>
+</body>
+</html>
